@@ -101,7 +101,7 @@
       color: var(--text-dark);
     }
 
-    .header_container .section_header {
+    .header__container .section__header {
       text-align: center;
       font-size: 3rem;
       line-height: 4rem;
@@ -144,17 +144,17 @@
       gap: 1rem;
     }
 
-    .booking_container .input_content {
+    .booking__container .input__content {
       width: 100%;
     }
 
-    .booking_container .form_group {
+    .booking__container .form__group {
       display: flex;
       align-items: center;
       gap: 1rem;
     }
 
-    .booking_container .form_group span {
+    .booking__container .form__group span {
       padding: 10px;
       font-size: 1.5rem;
       color: var(--text-dark);
@@ -162,7 +162,7 @@
       border-radius: 1rem;
     }
 
-    .booking_container .input_group {
+    .booking__container .input__group {
       width: 100%;
       position: relative;
     }
@@ -194,7 +194,7 @@
       top: 0;
     }
 
-    .booking_container .form_group p {
+    .booking__container .form__group p {
       margin-top: 0.5rem;
       font-size: 0.8rem;
       color: var(--text-light);
@@ -213,7 +213,7 @@
       letter-spacing: 5px;
     }
 
-    .plan_container .section_header {
+    .plan__container .section__header {
       text-align: center;
       font-size: 3rem;
       line-height: 4rem;
@@ -302,11 +302,11 @@
       gap: 2rem;
     }
 
-    .memories_header .section_header {
+    .memories__header .section__header {
       max-width: 600px;
     }
 
-    .memories_header .view_all {
+    .memories__header .view__all {
       padding: 1rem 2rem;
       font-size: 1rem;
       font-weight: 500;
@@ -424,13 +424,13 @@
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     }
 
-    .travellers_card_content {
+    .travellers__card__content {
       position: relative;
       padding: 1rem;
       text-align: center;
     }
 
-    .travellers_card_content img {
+    .travellers__card__content img {
       position: absolute;
       max-width: 70px;
       top: 0;
@@ -440,14 +440,14 @@
       border-radius: 100%;
     }
 
-    .travellers_card_content h4 {
+    .travellers__card__content h4 {
       margin-top: 1.5rem;
       font-size: 1.2rem;
       font-weight: 600;
       color: var(--text-dark);
     }
 
-    .travellers_card_content p {
+    .travellers__card__content p {
       font-weight: 500;
       color: var(--text-light);
     }
@@ -541,9 +541,9 @@
     }
 
     @media (width < 1200px) {
-      .section_container.header_container,
-      .section_container.plan_container,
-      .section_container.lounge_container {
+      .section__container.header__container,
+      .section__container.plan__container,
+      .section__container.lounge__container {
         overflow: hidden;
       }
 
@@ -645,12 +645,12 @@
   <a th:href="@{/showNewFlightForm}"><button class="btn">Book Flight</button></a>
   <a th:href="@{/displayFlightBookingDetails}"><button class="btn">Manage Bookings</button></a>
 </nav>
-<header class="section_container header_container">
+<header class="section__container header__container">
   <h1 class="section__header">Find And Book<br />A Great Experience</h1>
   <img th:src="@{/images/header.jpg}" alt="header" />
 </header>
 
-<section class="section_container booking_container">
+<section class="section__container booking__container">
   <div class="booking__nav">
     <span>Economy Class</span>
     <span>Business Class</span>
@@ -701,7 +701,7 @@
   </form>
 </section>
 
-<section class="section_container plan_container">
+<section class="section__container plan__container">
   <p class="subheader">TRAVEL SUPPORT</p>
   <h2 class="section__header">Plan your travel with confidence</h2>
   <p class="description">
@@ -740,7 +740,7 @@
 </section>
 
 <section class="memories">
-  <div class="section_container memories_container">
+  <div class="section__container memories__container">
     <div class="memories__header">
       <h2 class="section__header">
         Travel to make memories all around the world
@@ -776,7 +776,7 @@
   </div>
 </section>
 
-<section class="section_container lounge_container">
+<section class="section__container lounge__container">
   <div class="lounge__image">
     <img th:src="@{/images/lounge-1.jpg}" alt="lounge" />
     <img th:src="@{/images/lounge-2.jpg}" alt="lounge" />
@@ -816,12 +816,12 @@
   </div>
 </section>
 
-<section class="section_container travellers_container">
+<section class="section__container travellers__container">
   <h2 class="section__header">Best travellers of the month</h2>
   <div class="travellers__grid">
     <div class="travellers__card">
       <img th:src="@{/images/traveller-1.jpg}" alt="traveller" />
-      <div class="travellers_card_content">
+      <div class="travellers__card__content">
         <img th:src="@{/images/client-1.jpg}" alt="client" />
         <h4>Emily Johnson</h4>
         <p>Dubai</p>
@@ -829,7 +829,7 @@
     </div>
     <div class="travellers__card">
       <img th:src="@{/images/traveller-2.jpg}" alt="traveller" />
-      <div class="travellers_card_content">
+      <div class="travellers__card__content">
         <img th:src="@{/images/client-2.jpg}" alt="client" />
         <h4>David Smith</h4>
         <p>Paris</p>
@@ -837,7 +837,7 @@
     </div>
     <div class="travellers__card">
       <img th:src="@{/images/traveller-3.jpg}" alt="traveller" />
-      <div class="travellers_card_content">
+      <div class="travellers__card__content">
         <img th:src="@{/images/client-3.jpg}" alt="client" />
         <h4>Olivia Brown</h4>
         <p>Singapore</p>
@@ -845,7 +845,7 @@
     </div>
     <div class="travellers__card">
       <img th:src="@{/images/traveller-4.jpg}" alt="traveller" />
-      <div class="travellers_card_content">
+      <div class="travellers__card__content">
         <img th:src="@{/images/client-4.jpg}" alt="client" />
         <h4>Daniel Taylor</h4>
         <p>Malaysia</p>
@@ -855,7 +855,7 @@
 </section>
 
 <section class="subscribe">
-  <div class="section_container subscribe_container">
+  <div class="section__container subscribe__container">
     <h2 class="section__header">Subscribe newsletter & get latest news</h2>
     <form class="subscribe__form">
       <input type="text" placeholder="Enter your email here" />
@@ -865,7 +865,7 @@
 </section>
 
 <footer class="footer">
-  <div class="section_container footer_container">
+  <div class="section__container footer__container">
     <div class="footer__col">
       <h3>Sky Walker</h3>
       <p>
@@ -893,7 +893,7 @@
       <p>Socials</p>
     </div>
   </div>
-  <div class="section_container footer_bar">
+  <div class="section__container footer__bar">
     <p>Copyright © 2024 Sky Explorer. All rights reserved.</p>
     <div class="socials">
       <span><i class="ri-facebook-fill"></i></span>
