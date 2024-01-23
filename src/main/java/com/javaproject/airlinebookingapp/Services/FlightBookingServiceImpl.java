@@ -1,7 +1,7 @@
 package com.javaproject.airlinebookingapp.services;
 
-import com.javaproject.flightbookingapp.domain.FlightBooking;
-import com.javaproject.flightbookingapp.repository.FlightBookingRepository;
+import com.javaproject.airlinebookingapp.domain.FlightBooking;
+import com.javaproject.airlinebookingapp.repository.FlightBookingRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
