@@ -1,7 +1,7 @@
 package com.javaproject.airlinebookingapp.services;
 
-import com.javaproject.flightbookingapp.domain.FlightBooking;
-import com.javaproject.flightbookingapp.services.FlightBookingService;
+import com.javaproject.airlinebookingapp.domain.FlightBooking;
+import com.javaproject.airlinebookingapp.services.FlightBookingService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
