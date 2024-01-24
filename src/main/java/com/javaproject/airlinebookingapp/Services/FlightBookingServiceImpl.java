@@ -1,4 +1,4 @@
-package com.javaproject.airlinebookingapp.services;
+package com.javaproject.airlinebookingapp.Services;
 
 import com.javaproject.airlinebookingapp.domain.FlightBooking;
 import com.javaproject.airlinebookingapp.repository.FlightBookingRepository;
